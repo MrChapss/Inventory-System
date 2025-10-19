@@ -1,17 +1,17 @@
-package STDL;
+package inventory_system;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class TDL {
+public class Inventory_System_TDL {
 	public static void main(String[] args) {
 		// initialize array list and scanner
 		Scanner input = new Scanner(System.in);
 		ArrayList<String> userTDAL = new ArrayList<String>();
+		
 		// initialize variables
 		String userADD, userRetry, uSearch;
 		int uStart;
-		
 		
 		// using do while to repeat the code
 		outer_layer:
@@ -65,7 +65,8 @@ public class TDL {
 						
 						// if not yet listed
 						if (!userTDAL.contains(uSearch)) {
-							System.out.printf("%nThe product %s is not listed!", uSearch);						}
+							System.out.printf("%nThe product %s is not listed!", uSearch);	
+						}
 					}
 					break;
 					
@@ -99,7 +100,7 @@ public class TDL {
 	}
 	// introduction/guide
 	public static void tdlIntro() {
-		System.out.printf("%nWelcome to Inventory System!%n%n");
+		System.out.printf("%n%nWelcome to Inventory System!%n%n");
 		System.out.println("Choose from the options!");
 		System.out.println("1. Add a Product");
 		System.out.println("2. Products List");
